@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  MyFirstApp
 //
 //  Created by Lola Garavagno on 05/08/2021.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
+    
+    @State private var isShowingHabitCreation = false
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
             
@@ -26,7 +28,11 @@ struct ContentView: View {
                     }.padding(.horizontal, 16)
                 }.navigationTitle(Text("Mes habitudes"))
             }
-            PlusButtonView()
+            PlusButtonView(action: {
+                isShowingHabitCreation.toggle()
+            }).sheet(isPresented: $isShowingHabitCreation, content: {
+              HabitCreationView()
+            })
                 .padding()
         }
         }
@@ -35,6 +41,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
