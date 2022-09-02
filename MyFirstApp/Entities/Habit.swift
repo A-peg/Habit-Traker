@@ -9,8 +9,8 @@ import Foundation
 
 struct Habit: Identifiable {
     let id = UUID().uuidString
-    let imageName: String
+    let imageURL: URL?
     let name: String
     let totalTime:Int
-    let isFavourite: Bool
+    var isFavourite: Bool
 }

@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct HabitCellView: View {
     
-    let habit: Habit
+     @State var habit: Habit
     
     var body: some View {
         HStack {
-            Image(habit.imageName)
+            KFImage(habit.imageURL)
                 .resizable()
                 .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                 .frame(width: 80, height: 80)
@@ -29,7 +30,7 @@ struct HabitCellView: View {
                 Text("Total : \(habit.totalTime) minutes")
             }
             Spacer()
-           FavoriteButtonView()
+            FavoriteButtonView(isLiked: $habit.isFavourite)
         }.padding()
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoriteButtonView: View {
     
-   @State var isLiked:Bool = false
+   @Binding var isLiked:Bool
     
     var body: some View {
         Button(action: {
@@ -25,10 +25,14 @@ struct FavoriteButtonView: View {
 }
 
 struct FavoriteButtonView_Previews: PreviewProvider {
+    
+    @State static var isLiked = true
+    @State static var isNotLiked = false
+    
     static var previews: some View {
         Group {
-            FavoriteButtonView(isLiked: true)
-            FavoriteButtonView(isLiked: false)
+            FavoriteButtonView(isLiked: $isLiked)
+            FavoriteButtonView(isLiked: $isNotLiked)
                 
         }.previewLayout(.sizeThatFits)
     }
