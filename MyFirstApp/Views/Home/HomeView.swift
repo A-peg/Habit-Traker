@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @ObservedObject var habitLibrary:HabitLibrary
     @State private var isShowingHabitCreation = false
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
@@ -17,7 +18,7 @@ struct HomeView: View {
             NavigationView{
                 ScrollView {
                     VStack{
-                    ForEach(testHabits) { habit in
+                        ForEach(habitLibrary.testHabits) { habit in
                         ZStack{
                             RoundedRectangle(cornerRadius: 16,style: .continuous)
                                 .fill(Color.white)
@@ -31,7 +32,7 @@ struct HomeView: View {
             PlusButtonView(action: {
                 isShowingHabitCreation.toggle()
             }).sheet(isPresented: $isShowingHabitCreation, content: {
-              HabitCreationView()
+                HabitCreationView(habitLibrary: habitLibrary)
             })
                 .padding()
         }
@@ -40,7 +41,9 @@ struct HomeView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
+    
+    @StateObject static var habitLibrary = HabitLibrary()
     static var previews: some View {
-        HomeView()
+        HomeView(habitLibrary: habitLibrary)
     }
 }

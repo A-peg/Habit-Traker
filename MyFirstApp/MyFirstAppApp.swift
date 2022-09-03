@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MyFirstAppApp: App {
+    
+    @StateObject  var habitLibrary = HabitLibrary()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(habitLibrary: habitLibrary)
         }
     }
 }

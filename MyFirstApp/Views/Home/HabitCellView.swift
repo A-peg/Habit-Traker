@@ -36,8 +36,14 @@ struct HabitCellView: View {
 }
 
 struct HabitCellView_Previews: PreviewProvider {
+    
+     private static let testHabit = Habit(imageURL: URL(string: "https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&w=600"),
+    name: "Running",
+    totalTime: 178,
+    isFavourite: false)
+    
     static var previews: some View {
-        HabitCellView(habit:testHabits[0])
+        HabitCellView(habit:testHabit)
             .previewLayout(.sizeThatFits)
     }
 }

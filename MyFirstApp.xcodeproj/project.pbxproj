@@ -16,6 +16,7 @@
 		A961EC0926BEDDCD007EB5E7 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961EC0826BEDDCD007EB5E7 /* FavoriteButtonView.swift */; };
 		A971347126DEAC1800A52EF0 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971347026DEAC1700A52EF0 /* PlusButtonView.swift */; };
 		A984AB9B26BFCE7000275EB9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984AB9A26BFCE7000275EB9 /* TestView.swift */; };
+		A9DD06B128C3AFC6009651ED /* NewHabitConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD06B028C3AFC6009651ED /* NewHabitConfig.swift */; };
 		A9F864AC26BC6A0E00A48372 /* MyFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F864AB26BC6A0E00A48372 /* MyFirstAppApp.swift */; };
 		A9F864AE26BC6A0E00A48372 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F864AD26BC6A0E00A48372 /* HomeView.swift */; };
 		A9F864B026BC6A1100A48372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F864AF26BC6A1100A48372 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		A961EC0826BEDDCD007EB5E7 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		A971347026DEAC1700A52EF0 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
 		A984AB9A26BFCE7000275EB9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		A9DD06B028C3AFC6009651ED /* NewHabitConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitConfig.swift; sourceTree = "<group>"; };
 		A9F864A826BC6A0E00A48372 /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F864AB26BC6A0E00A48372 /* MyFirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppApp.swift; sourceTree = "<group>"; };
 		A9F864AD26BC6A0E00A48372 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				A9614D8A26D81C2800B711AA /* Habit.swift */,
+				A9DD06B028C3AFC6009651ED /* NewHabitConfig.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				A9F864AE26BC6A0E00A48372 /* HomeView.swift in Sources */,
 				A9614D9126D827E300B711AA /* HabitCellView.swift in Sources */,
 				A961EC0926BEDDCD007EB5E7 /* FavoriteButtonView.swift in Sources */,
+				A9DD06B128C3AFC6009651ED /* NewHabitConfig.swift in Sources */,
 				A9F864AC26BC6A0E00A48372 /* MyFirstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
