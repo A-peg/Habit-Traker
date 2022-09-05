@@ -7,20 +7,22 @@
 
 import Foundation
 
-struct Habit: Identifiable {
+class Habit: Identifiable,ObservableObject {
     let id = UUID().uuidString
-    let imageURL: URL?
-    let name: String
-    let totalTime:Int
-    var isFavourite: Bool
-    let description:String
+    @Published var imageURL: URL?
+    @Published var name: String
+    @Published var totalTime:Int
+    @Published var isFavourite: Bool
+    @Published var description:String
+    @Published var timeSlots:[SpentTime]
     
-    init(imageURL: URL?, name: String, totalTime: Int, isFavourite: Bool) {
+    init(imageURL: URL?, name: String, totalTime: Int, isFavourite: Bool, description: String) {
         self.imageURL = imageURL
         self.name = name
         self.totalTime = totalTime
         self.isFavourite = isFavourite
-        self.description = ""
+        self.description = description
+        self.timeSlots = []
     }
     
     init(config: NewHabitConfig) {
@@ -29,6 +31,7 @@ struct Habit: Identifiable {
         self.totalTime = 0
         self.isFavourite = false
         self.description = config.description
+        self.timeSlots = []
     }
         
 }

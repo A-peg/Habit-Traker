@@ -12,10 +12,8 @@ struct HomeView: View {
     @ObservedObject var habitLibrary:HabitLibrary
     @State private var isShowingHabitCreation = false
     var body: some View {
-        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
-            
-        
-            NavigationView{
+        NavigationView{
+                ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
                 ScrollView {
                     VStack{
                         ForEach(habitLibrary.testHabits) { habit in
@@ -23,8 +21,16 @@ struct HomeView: View {
                             RoundedRectangle(cornerRadius: 16,style: .continuous)
                                 .fill(Color.white)
                                 .shadow(color: Color(Color.RGBColorSpace.sRGB, white: 0, opacity: 0.2), radius: 4)
-                            HabitCellView(habit: habit)
+                            NavigationLink(
+                                destination: HabitDetailView(habit: habit),
+                                label: {
+                                    HabitCellView(habit: habit)
+                                        .foregroundColor(.black)
+                            
+                            
+                        })
                         }
+                        
                     }
                     }.padding(.horizontal, 16)
                 }.navigationTitle(Text("Mes habitudes"))

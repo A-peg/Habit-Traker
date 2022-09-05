@@ -17,6 +17,13 @@
 		A971347126DEAC1800A52EF0 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971347026DEAC1700A52EF0 /* PlusButtonView.swift */; };
 		A984AB9B26BFCE7000275EB9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984AB9A26BFCE7000275EB9 /* TestView.swift */; };
 		A9DD06B128C3AFC6009651ED /* NewHabitConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD06B028C3AFC6009651ED /* NewHabitConfig.swift */; };
+		A9E7F22728C5FB86004B4F99 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7F22628C5FB86004B4F99 /* HabitDetailView.swift */; };
+		A9E7F22928C5FE5F004B4F99 /* HabitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7F22828C5FE5F004B4F99 /* HabitHeaderView.swift */; };
+		A9E7F22B28C61B64004B4F99 /* HabitDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7F22A28C61B64004B4F99 /* HabitDescriptionView.swift */; };
+		A9E7F22D28C61E9F004B4F99 /* TimeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7F22C28C61E9F004B4F99 /* TimeCellView.swift */; };
+		A9E7F22F28C61FBD004B4F99 /* SpentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7F22E28C61FBD004B4F99 /* SpentTime.swift */; };
+		A9E7F23128C62495004B4F99 /* TimeConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7F23028C62495004B4F99 /* TimeConfigurationView.swift */; };
+		A9E7F23328C640CD004B4F99 /* StandardButtomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7F23228C640CD004B4F99 /* StandardButtomView.swift */; };
 		A9F864AC26BC6A0E00A48372 /* MyFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F864AB26BC6A0E00A48372 /* MyFirstAppApp.swift */; };
 		A9F864AE26BC6A0E00A48372 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F864AD26BC6A0E00A48372 /* HomeView.swift */; };
 		A9F864B026BC6A1100A48372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F864AF26BC6A1100A48372 /* Assets.xcassets */; };
@@ -33,6 +40,13 @@
 		A971347026DEAC1700A52EF0 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
 		A984AB9A26BFCE7000275EB9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		A9DD06B028C3AFC6009651ED /* NewHabitConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitConfig.swift; sourceTree = "<group>"; };
+		A9E7F22628C5FB86004B4F99 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		A9E7F22828C5FE5F004B4F99 /* HabitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitHeaderView.swift; sourceTree = "<group>"; };
+		A9E7F22A28C61B64004B4F99 /* HabitDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDescriptionView.swift; sourceTree = "<group>"; };
+		A9E7F22C28C61E9F004B4F99 /* TimeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCellView.swift; sourceTree = "<group>"; };
+		A9E7F22E28C61FBD004B4F99 /* SpentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpentTime.swift; sourceTree = "<group>"; };
+		A9E7F23028C62495004B4F99 /* TimeConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConfigurationView.swift; sourceTree = "<group>"; };
+		A9E7F23228C640CD004B4F99 /* StandardButtomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButtomView.swift; sourceTree = "<group>"; };
 		A9F864A826BC6A0E00A48372 /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F864AB26BC6A0E00A48372 /* MyFirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppApp.swift; sourceTree = "<group>"; };
 		A9F864AD26BC6A0E00A48372 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -66,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				A939F86528C223760083E1F5 /* Home */,
+				A9E7F22328C5FB0C004B4F99 /* HabitDetail */,
 				A937482F28C23E8600FE58DC /* HabitCreation */,
 				A939F86628C2237D0083E1F5 /* Shared */,
 			);
@@ -86,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A961EC0826BEDDCD007EB5E7 /* FavoriteButtonView.swift */,
+				A9E7F23228C640CD004B4F99 /* StandardButtomView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -95,8 +111,21 @@
 			children = (
 				A9614D8A26D81C2800B711AA /* Habit.swift */,
 				A9DD06B028C3AFC6009651ED /* NewHabitConfig.swift */,
+				A9E7F22E28C61FBD004B4F99 /* SpentTime.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		A9E7F22328C5FB0C004B4F99 /* HabitDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7F22628C5FB86004B4F99 /* HabitDetailView.swift */,
+				A9E7F22828C5FE5F004B4F99 /* HabitHeaderView.swift */,
+				A9E7F22A28C61B64004B4F99 /* HabitDescriptionView.swift */,
+				A9E7F22C28C61E9F004B4F99 /* TimeCellView.swift */,
+				A9E7F23028C62495004B4F99 /* TimeConfigurationView.swift */,
+			);
+			path = HabitDetail;
 			sourceTree = "<group>";
 		};
 		A9F8649F26BC6A0E00A48372 = {
@@ -213,13 +242,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E7F23328C640CD004B4F99 /* StandardButtomView.swift in Sources */,
+				A9E7F22D28C61E9F004B4F99 /* TimeCellView.swift in Sources */,
 				A984AB9B26BFCE7000275EB9 /* TestView.swift in Sources */,
 				A9614D8E26D821CA00B711AA /* Data.swift in Sources */,
+				A9E7F22F28C61FBD004B4F99 /* SpentTime.swift in Sources */,
+				A9E7F22728C5FB86004B4F99 /* HabitDetailView.swift in Sources */,
 				A971347126DEAC1800A52EF0 /* PlusButtonView.swift in Sources */,
+				A9E7F22B28C61B64004B4F99 /* HabitDescriptionView.swift in Sources */,
 				A9614D8B26D81C2800B711AA /* Habit.swift in Sources */,
+				A9E7F22928C5FE5F004B4F99 /* HabitHeaderView.swift in Sources */,
 				A937482E28C23E5C00FE58DC /* HabitCreationView.swift in Sources */,
 				A94D9D6028C24891003EC4B8 /* CoverSelectionView.swift in Sources */,
 				A9F864AE26BC6A0E00A48372 /* HomeView.swift in Sources */,
+				A9E7F23128C62495004B4F99 /* TimeConfigurationView.swift in Sources */,
 				A9614D9126D827E300B711AA /* HabitCellView.swift in Sources */,
 				A961EC0926BEDDCD007EB5E7 /* FavoriteButtonView.swift in Sources */,
 				A9DD06B128C3AFC6009651ED /* NewHabitConfig.swift in Sources */,

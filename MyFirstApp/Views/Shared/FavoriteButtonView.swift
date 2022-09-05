@@ -11,6 +11,9 @@ struct FavoriteButtonView: View {
     
    @Binding var isLiked:Bool
     
+    let onColor: Color
+    let offColor: Color
+    
     var body: some View {
         Button(action: {
             isLiked.toggle()
@@ -31,8 +34,8 @@ struct FavoriteButtonView_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            FavoriteButtonView(isLiked: $isLiked)
-            FavoriteButtonView(isLiked: $isNotLiked)
+            FavoriteButtonView(isLiked: $isLiked, onColor: .red, offColor: .gray)
+            FavoriteButtonView(isLiked: $isNotLiked, onColor: .red, offColor: .gray)
                 
         }.previewLayout(.sizeThatFits)
     }
