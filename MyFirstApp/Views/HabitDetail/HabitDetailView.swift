@@ -21,7 +21,10 @@ struct HabitDetailView: View {
                     .padding()
                 TimeConfigurationView(selectedMinutes:  $selectedTime, selectedDate: $selectedDate)
                     .padding()
-                StandardButtomView(color: .blue, action: {}, title: "Ajouter du temps")
+                StandardButtomView(color: .blue, action: {
+                    let newTime = SpentTime(date: selectedDate, minutes: selectedTime)
+                    habit.timeSlots.append(newTime)
+                }, title: "Ajouter du temps")
                     .padding()
                 ForEach(habit.timeSlots){ time in
                     TimeCellView(spentTime: time)
